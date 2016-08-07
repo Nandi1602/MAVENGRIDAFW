@@ -3,21 +3,21 @@
 <suite name="Suite" parallel="tests">
  <test name="TestFF">
   <parameter name="browser" value="firefox"></parameter>
-  <parameter name="url" value="http://10.10.4.82:4444/wd/hub"></parameter>
+  <parameter name="url" value="http://10.10.4.79:4444/wd/hub"></parameter>
     <classes>
       <class name="com.qspiders.grid.GridDemoB"/>
     </classes>
   </test> <!-- Test -->
   <test name="TestGC">
   <parameter name="browser" value="chrome"></parameter>
-  <parameter name="url" value="http://10.10.4.82:4444/wd/hub"></parameter>
+  <parameter name="url" value="http://10.10.4.79:4444/wd/hub"></parameter>
     <classes>
       <class name="com.qspiders.grid.GridDemoB"/>
     </classes>
   </test>
   <test name="TestIE">
   <parameter name="browser" value="internet explorer"></parameter>
-  <parameter name="url" value="http://10.10.4.82:4444/wd/hub"></parameter>
+  <parameter name="url" value="http://10.10.4.79:4444/wd/hub"></parameter>
     <classes>
       <class name="com.qspiders.grid.GridDemoB"/>
     </classes>
