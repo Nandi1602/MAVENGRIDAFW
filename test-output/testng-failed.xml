@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <parameter name="browser" value="internet explorer"/>
-  <parameter name="url" value="http://10.10.4.98:4455/wd/hub"/>
-  <test name="TestGC(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="http://10.10.4.82:4444/wd/hub"/>
+  <parameter name="url" value="http://10.10.4.79:4444/wd/hub"/>
+  <test name="TestIE(failed)" parallel="tests">
+    <parameter name="browser" value="internet explorer"/>
+    <parameter name="url" value="http://10.10.4.79:4444/wd/hub"/>
     <classes>
       <class name="com.qspiders.grid.GridDemoB">
         <methods>
@@ -13,5 +13,5 @@
         </methods>
       </class> <!-- com.qspiders.grid.GridDemoB -->
     </classes>
-  </test> <!-- TestGC(failed) -->
+  </test> <!-- TestIE(failed) -->
 </suite> <!-- Failed suite [Suite] -->

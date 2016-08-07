@@ -2,13 +2,13 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[chrome]]>
-    </line>
-    <line>
       <![CDATA[internet explorer]]>
     </line>
     <line>
       <![CDATA[firefox]]>
+    </line>
+    <line>
+      <![CDATA[chrome]]>
     </line>
     <line>
       <![CDATA[Openend Google Page]]>
@@ -23,80 +23,40 @@
       <![CDATA[Closed Google Page]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="21799" started-at="2016-07-16T11:37:01Z" finished-at="2016-07-16T11:37:23Z">
+  <suite name="Suite" duration-ms="245123" started-at="2016-08-07T11:04:34Z" finished-at="2016-08-07T11:08:39Z">
     <groups>
     </groups>
-    <test name="TestIE" duration-ms="3244" started-at="2016-07-16T11:37:01Z" finished-at="2016-07-16T11:37:04Z">
+    <test name="TestIE" duration-ms="1081" started-at="2016-08-07T11:04:34Z" finished-at="2016-08-07T11:04:35Z">
       <class name="com.qspiders.grid.GridDemoB">
-        <test-method status="PASS" signature="test(org.testng.xml.XmlTest)[pri:0, instance:com.qspiders.grid.GridDemoB@58651fd0]" name="test" duration-ms="3215" started-at="2016-07-16T17:07:01Z" finished-at="2016-07-16T17:07:04Z">
+        <test-method status="FAIL" signature="test(org.testng.xml.XmlTest)[pri:0, instance:com.qspiders.grid.GridDemoB@77cd7a0]" name="test" duration-ms="1016" started-at="2016-08-07T16:34:34Z" finished-at="2016-08-07T16:34:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Test: "TestIE" verbose:1[parameters:browser=>internet explorerurl=>http://10.10.4.98:4455/wd/hub][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qspiders.grid.GridDemoB]  packages:] ]]>
+                <![CDATA[[Test: "TestIE" verbose:1[parameters:browser=>internet explorerurl=>http://10.10.4.79:4444/wd/hub][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qspiders.grid.GridDemoB]  packages:] ]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-            <line>
-              <![CDATA[internet explorer]]>
-            </line>
-            <line>
-              <![CDATA[Openend Google Page]]>
-            </line>
-            <line>
-              <![CDATA[Closed Google Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.qspiders.grid.GridDemoB -->
-    </test> <!-- TestIE -->
-    <test name="TestFF" duration-ms="8832" started-at="2016-07-16T11:37:01Z" finished-at="2016-07-16T11:37:10Z">
-      <class name="com.qspiders.grid.GridDemoB">
-        <test-method status="PASS" signature="test(org.testng.xml.XmlTest)[pri:0, instance:com.qspiders.grid.GridDemoB@1efbd816]" name="test" duration-ms="8802" started-at="2016-07-16T17:07:01Z" finished-at="2016-07-16T17:07:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Test: "TestFF" verbose:1[parameters:browser=>firefoxurl=>http://10.10.4.56:4444/wd/hub][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qspiders.grid.GridDemoB]  packages:] ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[firefox]]>
-            </line>
-            <line>
-              <![CDATA[Openend Google Page]]>
-            </line>
-            <line>
-              <![CDATA[Closed Google Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.qspiders.grid.GridDemoB -->
-    </test> <!-- TestFF -->
-    <test name="TestGC" duration-ms="21799" started-at="2016-07-16T11:37:01Z" finished-at="2016-07-16T11:37:23Z">
-      <class name="com.qspiders.grid.GridDemoB">
-        <test-method status="FAIL" signature="test(org.testng.xml.XmlTest)[pri:0, instance:com.qspiders.grid.GridDemoB@5034c75a]" name="test" duration-ms="21751" started-at="2016-07-16T17:07:01Z" finished-at="2016-07-16T17:07:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Test: "TestGC" verbose:1[parameters:browser=>chromeurl=>http://10.10.4.82:4444/wd/hub][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qspiders.grid.GridDemoB]  packages:] ]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[Error forwarding the new session cannot find : Capabilities [{browserName=internet explorer}]
+Command duration or timeout: 317 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'CBT-020', ip: '10.10.4.98', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{browserName=internet explorer}]
+Command duration or timeout: 317 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'CBT-020', ip: '10.10.4.98', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
@@ -121,40 +81,82 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 10.10.4.82:4444 [/10.10.4.82] failed: Connection timed out: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 24 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 37 more
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session cannot find : Capabilities [{browserName=internet explorer}]
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[internet explorer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.qspiders.grid.GridDemoB -->
+    </test> <!-- TestIE -->
+    <test name="TestFF" duration-ms="78508" started-at="2016-08-07T11:04:34Z" finished-at="2016-08-07T11:05:52Z">
+      <class name="com.qspiders.grid.GridDemoB">
+        <test-method status="PASS" signature="test(org.testng.xml.XmlTest)[pri:0, instance:com.qspiders.grid.GridDemoB@26653222]" name="test" duration-ms="78463" started-at="2016-08-07T16:34:34Z" finished-at="2016-08-07T16:35:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "TestFF" verbose:1[parameters:browser=>firefoxurl=>http://10.10.4.79:4444/wd/hub][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qspiders.grid.GridDemoB]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[firefox]]>
+            </line>
+            <line>
+              <![CDATA[Openend Google Page]]>
+            </line>
+            <line>
+              <![CDATA[Closed Google Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.qspiders.grid.GridDemoB -->
+    </test> <!-- TestFF -->
+    <test name="TestGC" duration-ms="245123" started-at="2016-08-07T11:04:34Z" finished-at="2016-08-07T11:08:39Z">
+      <class name="com.qspiders.grid.GridDemoB">
+        <test-method status="PASS" signature="test(org.testng.xml.XmlTest)[pri:0, instance:com.qspiders.grid.GridDemoB@57baeedf]" name="test" duration-ms="245077" started-at="2016-08-07T16:34:34Z" finished-at="2016-08-07T16:38:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "TestGC" verbose:1[parameters:browser=>chromeurl=>http://10.10.4.79:4444/wd/hub][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qspiders.grid.GridDemoB]  packages:] ]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[chrome]]>
+            </line>
+            <line>
+              <![CDATA[Openend Google Page]]>
+            </line>
+            <line>
+              <![CDATA[Closed Google Page]]>
             </line>
           </reporter-output>
         </test-method> <!-- test -->
