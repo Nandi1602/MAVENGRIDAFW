@@ -15,11 +15,4 @@
       <class name="com.qspiders.grid.GridDemoB"/>
     </classes>
   </test>
-  <test name="TestIE">
-  <parameter name="browser" value="internet explorer"></parameter>
-  <parameter name="url" value="http://10.10.4.79:4444/wd/hub"></parameter>
-    <classes>
-      <class name="com.qspiders.grid.GridDemoB"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </suite> <!-- Suite -->
