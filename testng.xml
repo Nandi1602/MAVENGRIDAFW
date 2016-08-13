@@ -6,6 +6,7 @@
   <parameter name="url" value="http://10.10.4.79:4444/wd/hub"></parameter>
     <classes>
       <class name="com.qspiders.grid.GridDemoB"/>
+      <class name="com.qspiders.grid.GridDemoC"/>
     </classes>
   </test> <!-- Test -->
   <test name="TestGC">
@@ -13,6 +14,7 @@
   <parameter name="url" value="http://10.10.4.79:4444/wd/hub"></parameter>
     <classes>
       <class name="com.qspiders.grid.GridDemoB"/>
+      <class name="com.qspiders.grid.GridDemoC"/>
     </classes>
   </test>
   </suite> <!-- Suite -->
